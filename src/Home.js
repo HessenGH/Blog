@@ -3,7 +3,7 @@ import useFetch from "./usefetch";
 
 const Home = () => {
     const{data:blogs,isPending,error}=useFetch('http://localhost:8000/blogs');
-
+    //run this command to see the data:'npx json-server --watch data/db.json --port 8000'
     // const handleDelete=(id)=>{
     //     const newBlogs=blogs.filter(blog=>blog.id !== id);
     //     setBlogs(newBlogs);
@@ -13,7 +13,7 @@ const Home = () => {
         <div className="home">
             {error && <div>{error}</div>}
             {isPending && <div> loading...</div>}
-            {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
+            {blogs && <BlogList blogs={blogs} title="All Blogs" />}
             {/* <BlogList blogs={blogs.filter((blog)=>blog.author==='mario')} title="Mario,s Blogs!"/> */}
             {/* <button onClick={()=>setName('luigis')}>click me</button>  */}
         </div>

@@ -2,14 +2,13 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 100%;
   border-bottom: 1px solid black;
+  font: 1em sans-serif;
+  font-size: large;
+  
 }
-.navbar h1{
-  color: #f1356d;
-}
-.navbar .links{
+.links{
   margin-left: auto;
 }
 .nav-link{
@@ -23,7 +22,7 @@
   padding:6px;
 }
 .navbar a:hover{
-  color: #f1356d;
+  color: black;
 }
 .title{
   font-weight: bold;
@@ -84,16 +83,17 @@ margin-bottom: 10px;
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
+  /* font: 1em sans-serif; */
 }
 .create label{
   text-align: left;
   display: block;
+  
 }
 .create h2{
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 30px;
-
 }
 .create input, .create textarea,.create select{
   width: 100%;
@@ -103,11 +103,17 @@ margin-bottom: 10px;
   box-sizing: border-box;
   display: block;
 }
+.create textarea{
+  height: 200px;
+}
 .create button{
   background: #f1356d;
   color: #fff;
-  padding: 8px;
-  border: 0;
-  border-radius: 8px;
+  font-size: medium;
+  width: 150px;
+  padding: 10px;
+  border: 0px;
+  border-radius: 15px;
   cursor: pointer;
+  margin-top: 10px;
 }
